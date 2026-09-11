@@ -95,43 +95,11 @@ EOF
 
     cp $out/share/gnome-background-properties/chomiamos.xml $out/share/cinnamon-background-properties/chomiamos.xml
 
-    # 4. Support KDE Plasma Desktop (Paquets avec métadonnées)
-    install_plasma_wallpaper() {
-      local id="$1"
-      local name="$2"
-      local file="$3"
-      local dir="$out/share/wallpapers/$id"
-
-      mkdir -p "$dir/contents/images"
-      cp "$file" "$dir/contents/images/"
-      cp "$file" "$dir/contents/screenshot.png"
-
-      cat <<EOF > "$dir/metadata.desktop"
-[Desktop Entry]
-Name=$name
-X-KDE-PluginInfo-Name=$id
-X-KDE-PluginInfo-Author=Chomiam
-EOF
-
-      cat <<EOF > "$dir/metadata.json"
-{
-  "KPlugin": {
-    "Authors": [{ "Name": "Chomiam" }],
-    "Id": "$id",
-    "Name": "$name"
-  }
-}
-EOF
-    }
-
-    install_plasma_wallpaper "ChomiamOS-Default" "ChomiamOS Par Défaut" "wallpaper.jpeg"
-    install_plasma_wallpaper "ChomiamOS-01" "ChomiamOS 01" "wallpaper_0001.jpg"
-    install_plasma_wallpaper "ChomiamOS-02" "ChomiamOS 02" "wallpaper_0002.jpg"
-    install_plasma_wallpaper "ChomiamOS-03" "ChomiamOS 03" "wallpaper_0003.jpg"
-    install_plasma_wallpaper "ChomiamOS-04" "ChomiamOS 04" "wallpaper_0004.jpg"
-    install_plasma_wallpaper "ChomiamOS-05" "ChomiamOS 05" "wallpaper_0005.jpg"
-    install_plasma_wallpaper "ChomiamOS-06" "ChomiamOS 06" "wallpaper_0006.png"
-    install_plasma_wallpaper "ChomiamOS-07" "ChomiamOS 07" "wallpaper_0007.png"
+    # 4. Support KDE Plasma Desktop (Fonds d'écran à plat dans share/wallpapers)
+    install -d $out/share/wallpapers
+    for img in $out/share/backgrounds/chomiamos/*; do
+      ln -s "$img" "$out/share/wallpapers/$(basename "$img")"
+    done
 
     runHook postInstall
   '';

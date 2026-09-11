@@ -18,7 +18,7 @@ Collection officielle des fonds d'écran de l'environnement **ChomiamOS**, optim
 ## 🚀 Intégrations Desktop
 
 - **GNOME Shell** : Déclaré dans `/share/gnome-background-properties/chomiamos.xml` pour un affichage direct dans *Paramètres GNOME -> Arrière-plan*.
-- **KDE Plasma** : Paquets structurés dans `/share/wallpapers/` avec métadonnées `metadata.desktop` et `metadata.json`.
+- **KDE Plasma** : Déployés directement à plat dans `/share/wallpapers/` pour détection native directe.
 - **COSMIC Desktop** : Déployé dans `/share/backgrounds/cosmic/` et `/share/backgrounds/chomiamos/`.
 - **Cinnamon** : Déclaré dans `/share/cinnamon-background-properties/chomiamos.xml`.
 - **Système Global** : Disponible sous `/run/current-system/sw/share/backgrounds/chomiamos/` et `/etc/backgrounds/chomiamos/`.
