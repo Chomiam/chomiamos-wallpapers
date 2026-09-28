@@ -19,6 +19,8 @@ stdenvNoCC.mkDerivation {
     install -m 644 wallpaper_0005.jpg $out/share/backgrounds/chomiamos/
     install -m 644 wallpaper_0006.png $out/share/backgrounds/chomiamos/
     install -m 644 wallpaper_0007.png $out/share/backgrounds/chomiamos/
+    install -m 644 wallpaper_0008.jpeg $out/share/backgrounds/chomiamos/
+    install -m 644 wallpaper_0009.jpeg $out/share/backgrounds/chomiamos/
 
     # 2. Support COSMIC Desktop
     install -d $out/share/backgrounds/cosmic
@@ -86,6 +88,20 @@ stdenvNoCC.mkDerivation {
   <wallpaper deleted="false">
     <name>ChomiamOS 07</name>
     <filename>/run/current-system/sw/share/backgrounds/chomiamos/wallpaper_0007.png</filename>
+    <options>zoom</options>
+    <pcolor>#1e1e2e</pcolor>
+    <scolor>#11111b</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>ChomiamOS 08</name>
+    <filename>/run/current-system/sw/share/backgrounds/chomiamos/wallpaper_0008.jpeg</filename>
+    <options>zoom</options>
+    <pcolor>#1e1e2e</pcolor>
+    <scolor>#11111b</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>ChomiamOS 09</name>
+    <filename>/run/current-system/sw/share/backgrounds/chomiamos/wallpaper_0009.jpeg</filename>
     <options>zoom</options>
     <pcolor>#1e1e2e</pcolor>
     <scolor>#11111b</scolor>

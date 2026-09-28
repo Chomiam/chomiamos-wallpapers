@@ -14,6 +14,8 @@ Collection officielle des fonds d'écran de l'environnement **ChomiamOS**, optim
 | **ChomiamOS 05** | `wallpaper_0005.jpg` | 2560x1600 (16:10 QHD+) | JPEG |
 | **ChomiamOS 06** | `wallpaper_0006.png` | 3840x2160 (4K UHD) | PNG |
 | **ChomiamOS 07** | `wallpaper_0007.png` | 1920x1080 (FHD) | PNG |
+| **ChomiamOS 08** | `wallpaper_0008.jpeg` | 2752x1536 | JPEG |
+| **ChomiamOS 09** | `wallpaper_0009.jpeg` | 2752x1536 | JPEG |
 
 ## 🚀 Intégrations Desktop
 
